@@ -17,3 +17,5 @@ default['mysql-multi']['templates']['slave.cnf']['source'] = 'slave.cnf.erb'
 
 default['mysql-multi']['templates']['master.cnf']['cookbook'] = 'mysql-multi'
 default['mysql-multi']['templates']['master.cnf']['source'] = 'master.cnf.erb'
+
+default['mysql-multi']['cnf']['innodb_buffer_pool_size'] = '10M'

@@ -117,7 +117,7 @@ innodb_lock_wait_timeout = 60
 innodb_thread_concurrency = 2
 innodb_commit_concurrency = 2
 innodb_support_xa = true
-innodb_buffer_pool_size = 10M
+innodb_buffer_pool_size = <%= node['mysql-multi']['cnf']['innodb_buffer_pool_size'] %>
 innodb_log_file_size = 5M
 innodb_additional_mem_pool_size = 5M
 innodb_data_file_path = ibdata1:10M:autoextend
