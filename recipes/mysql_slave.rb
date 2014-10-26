@@ -49,7 +49,8 @@ template '/root/change.master.sql' do
   variables(
     host: node['mysql-multi']['master'],
     user: node['mysql-multi']['slave_user'],
-    password: node['mysql-multi']['server_repl_password']
+    password: node['mysql-multi']['server_repl_password'],
+    port: node['mysql-multi']['master_port']
   )
   notifies :run, 'execute[change master]', :immediately
 end

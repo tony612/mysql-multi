@@ -1,6 +1,7 @@
 # encoding: UTF-8
 
 default['mysql-multi']['master'] = nil
+default['mysql-multi']['master_port'] = 3306
 default['mysql-multi']['slaves'] = %w()
 default['mysql-multi']['slave_user'] = 'replicant'
 default['mysql-multi']['server_repl_password'] = nil
