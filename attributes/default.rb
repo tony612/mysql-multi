@@ -20,3 +20,4 @@ default['mysql-multi']['templates']['master.cnf']['cookbook'] = 'mysql-multi'
 default['mysql-multi']['templates']['master.cnf']['source'] = 'master.cnf.erb'
 
 default['mysql-multi']['cnf']['innodb_buffer_pool_size'] = '10M'
+default['mysql-multi']['cnf']['max_allowed_packet'] = '16M'
