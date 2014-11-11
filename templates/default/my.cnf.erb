@@ -146,6 +146,11 @@ relay_log_space_limit = 16G
 server-id = <%= @serverid %>
 thread_concurrency = 8
 
+# Slow Log
+slow_query_log = <%= node['mysql-multi']['cnf']['slow_query_log'] %>
+long_query_time = <%= node['mysql-multi']['cnf']['long_query_time'] %>
+log_queries_not_using_indexes = <%= node['mysql-multi']['cnf']['log_queries_not_using_indexes'] %>
+
 [mysqldump]
 quick
 quote-names
