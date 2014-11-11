@@ -150,6 +150,7 @@ thread_concurrency = 8
 slow_query_log = <%= node['mysql-multi']['cnf']['slow_query_log'] %>
 long_query_time = <%= node['mysql-multi']['cnf']['long_query_time'] %>
 log_queries_not_using_indexes = <%= node['mysql-multi']['cnf']['log_queries_not_using_indexes'] %>
+slow_query_log_file = <%= node['mysql-multi']['cnf']['slow_query_log_file'] %>
 
 [mysqldump]
 quick
