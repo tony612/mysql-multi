@@ -6,3 +6,8 @@
 [mysqld]
 sync_binlog = 1
 read_only = 1
+<% if node['mysql-multi']['enable_slave_binlog'] %>
+binlog-format = row
+log-bin = mysql-bin
+log-slave-updates = ON
+<% end %>

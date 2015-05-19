@@ -26,3 +26,5 @@ default['mysql-multi']['cnf']['slow_query_log'] = 1
 default['mysql-multi']['cnf']['long_query_time'] = 0.1
 default['mysql-multi']['cnf']['log_queries_not_using_indexes'] = 0
 default['mysql-multi']['cnf']['slow_query_log_file'] = '/var/log/mysql/slow_query.log'
+
+default['mysql-multi']['enable_slave_binlog'] = false
